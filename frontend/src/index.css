@@ -1,0 +1,43 @@
+:root {
+  --bg-primary: #050a15;
+  --bg-secondary: #0a1122;
+  --bg-card: rgba(15, 23, 42, 0.4);
+  --bg-elevated: rgba(30, 41, 59, 0.6);
+  --accent: #2563eb;
+  --accent-dim: #3b82f6;
+  --accent-glow: rgba(59, 130, 246, 0.5);
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --success: #10b981;
+  --warning: #f59e0b;
+  --border: rgba(255, 255, 255, 0.08);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  --blur: blur(12px);
+}
+
+/* Recharts Global Overrides */
+.recharts-text {
+  fill: var(--text) !important;
+}
+.recharts-cartesian-axis-tick-value {
+  fill: var(--text-muted) !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: radial-gradient(circle at 50% 0%, var(--bg-secondary), var(--bg-primary) 80%);
+  background-attachment: fixed;
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+}
